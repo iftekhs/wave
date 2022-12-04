@@ -1,0 +1,15 @@
+.contact:hover,
+.contact:hover p {
+  color: #fff;
+}
+
+.activeChat,
+.activeChat p {
+  background-color: #3b82f6;
+  color: #fff;
+}
+.contact:hover .unread,
+.activeChat .unread {
+  background-color: #fff;
+  color: #3b82f6;
+}

@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Contact from './Contact/Contact';
 import './Home.css';
 import Search from './Search/Search';
 
 const Home = () => {
+  const [activeChat, setActiveChat] = useState(null);
+
   const contacts = [
     {
       _id: 1,
@@ -32,7 +34,11 @@ const Home = () => {
               <Search></Search>
               <div className="mt-5 bg-white rounded-xl flex flex-col overflow-hidden">
                 {contacts.map((contact) => (
-                  <Contact key={contact._id} contact={contact}></Contact>
+                  <Contact
+                    key={contact._id}
+                    activeChat={activeChat}
+                    setActiveChat={setActiveChat}
+                    contact={contact}></Contact>
                 ))}
               </div>
             </div>
