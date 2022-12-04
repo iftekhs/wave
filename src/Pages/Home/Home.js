@@ -37,7 +37,18 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="chatbox-right"></div>
+          <div className="chatbox-right p-5">
+            <div className="flex flex-col h-full px-2 pb-3 bg-white rounded-xl">
+              <div className="h-full mb-10 overflow-auto"></div>
+              <div className="flex items-center justify-between gap-7">
+                <input
+                  type="text"
+                  className="w-full px-5 py-3 rounded-full bg-cgray outline-none"
+                />
+                <button className="bg-blue-500 text-white py-2 px-5 rounded-full">Send</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
