@@ -27,8 +27,8 @@ const Home = () => {
     <section>
       <div className="mh-100 bg-gradient-to-bl from-blue-400 to-blue-500 flex items-center justify-center px-2">
         <div className="chatbox bg-cgray rounded-lg grid overflow-hidden">
-          <div className="chatbox-left py-5 px-4">
-            <div className="flex flex-col gap-4">
+          <div className="chatbox-left pt-8 pb-5 pl-10 pr-5">
+            <div className="flex flex-col">
               <Search></Search>
               <div className="mt-5 bg-white rounded-xl flex flex-col overflow-hidden">
                 {contacts.map((contact) => (

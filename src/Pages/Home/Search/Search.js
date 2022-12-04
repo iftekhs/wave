@@ -28,8 +28,8 @@ const Search = () => {
       <div
         onClick={handleFocus}
         className={`${
-          isSearching ? '-top-40' : 'top-1/2'
-        } transition-all absolute  -translate-y-1/2 left-3 text-cgray2 flex items-center justify-center gap-2`}>
+          isSearching ? 'left-full' : 'left-3'
+        } transition-all absolute top-1/2 -translate-y-1/2  text-cgray2 flex items-center justify-center gap-2`}>
         <CiSearch className="text-xl"></CiSearch>
         <p className="font-semibold text-sm">SEARCH</p>
       </div>
