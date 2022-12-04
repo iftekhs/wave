@@ -1,0 +1,6 @@
+.chatbox {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 90vw;
+  height: 90vh;
+}
