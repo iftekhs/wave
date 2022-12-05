@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import Contact from './Contact/Contact';
 import { BiSend } from 'react-icons/bi';
+import { BsEmojiSmile } from 'react-icons/bs';
 import './Home.css';
 import Search from './Search/Search';
 
 const Home = () => {
   const [activeChat, setActiveChat] = useState(null);
+  const [activeEmojis, setActiveEmojis] = useState(true);
+  const chatTextInput = useRef();
 
   const contacts = [
     {
@@ -26,10 +29,17 @@ const Home = () => {
     },
   ];
 
+  const handleEmoji = (e) => {
+    if (e.target.tagName.toLowerCase() === 'span') {
+      const emoji = e.target.innerText;
+      chatTextInput.current.value += emoji;
+    }
+  };
+
   return (
     <section>
       <div className="mh-100 bg-gradient-to-bl from-blue-400 to-blue-500 flex items-center justify-center px-2">
-        <div className="chatbox bg-cgray rounded-lg grid overflow-hidden">
+        <div className="chatbox overflow-auto bg-cgray rounded-lg grid">
           <div className="chatbox-left pt-8 pb-5 pl-10 pr-5">
             <div className="flex flex-col">
               <Search></Search>
@@ -72,11 +82,108 @@ const Home = () => {
                   You too!
                 </div>
               </div>
-              <div className="flex items-center justify-between gap-4">
-                <input
-                  type="text"
-                  className="w-full px-5 py-3 rounded-full bg-cgray outline-none"
-                />
+              <div className="flex items-center gap-4">
+                <div className="w-full flex items-center justify-center gap-2">
+                  <div className="relative">
+                    <BsEmojiSmile
+                      onClick={() => setActiveEmojis(!activeEmojis)}
+                      className="cursor-pointer text-xl"></BsEmojiSmile>
+                    <div
+                      onClick={handleEmoji}
+                      className={`${
+                        activeEmojis && 'active-emojis'
+                      } emojis-box flex flex-wrap gap-2 bg-white p-5 rounded-lg transition-all`}>
+                      <span>😄</span>
+                      <span>😁</span>
+                      <span>😃</span>
+                      <span>😆</span>
+                      <span>😅</span>
+                      <span>😂</span>
+                      <span>🤣</span>
+                      <span>🥲</span>
+                      <span>🥹</span>
+                      <span>☺️</span>
+                      <span>😊</span>
+                      <span>😇</span>
+                      <span>🙂</span>
+                      <span>🙃</span>
+                      <span>😉</span>
+                      <span>😌</span>
+                      <span>😍</span>
+                      <span>🥰</span>
+                      <span>😘</span>
+                      <span>😗</span>
+                      <span>😙</span>
+                      <span>😚</span>
+                      <span>😋</span>
+                      <span>😛</span>
+                      <span>😝</span>
+                      <span>🤪</span>
+                      <span>🤨</span>
+                      <span>😜</span>
+                      <span>🧐</span>
+                      <span>🤓</span>
+                      <span>😎</span>
+                      <span>🥸</span>
+                      <span>🤩</span>
+                      <span>🥳</span>
+                      <span>😏</span>
+                      <span>😒</span>
+                      <span>😞</span>
+                      <span>😔</span>
+                      <span>😟</span>
+                      <span>😕</span>
+                      <span>🙁</span>
+                      <span>☹️</span>
+                      <span>😣</span>
+                      <span>😖</span>
+                      <span>😫</span>
+                      <span>😩</span>
+                      <span>🥺</span>
+                      <span>😢</span>
+                      <span>😭</span>
+                      <span>😮</span>
+                      <span>😤</span>
+                      <span>😠</span>
+                      <span>😡</span>
+                      <span>🤬</span>
+                      <span>🤯</span>
+                      <span>😳</span>
+                      <span>🥵</span>
+                      <span>🥶</span>
+                      <span>😱</span>
+                      <span>😨</span>
+                      <span>😰</span>
+                      <span>😥</span>
+                      <span>😓</span>
+                      <span>🫣</span>
+                      <span>🤗</span>
+                      <span>🫡</span>
+                      <span>🤔</span>
+                      <span>🫢</span>
+                      <span>🤭</span>
+                      <span>🤫</span>
+                      <span>🤥</span>
+                      <span>😶</span>
+                      <span>😶</span>
+                      <span>😐</span>
+                      <span>😑</span>
+                      <span>😬</span>
+                      <span>🙄</span>
+                      <span>😯</span>
+                      <span>😦</span>
+                      <span>😧</span>
+                      <span>😮</span>
+                      <span>😲</span>
+                      <span>😀</span>
+                    </div>
+                  </div>
+                  <input
+                    type="text"
+                    ref={chatTextInput}
+                    className="w-full px-5 py-3 bg-cgray rounded-full outline-none"
+                  />
+                </div>
                 <button className="bg-gradient-to-bl transition-all from-blue-400 to-blue-500 text-white p-3 text-lg rounded-full">
                   <BiSend></BiSend>
                 </button>
