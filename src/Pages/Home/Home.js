@@ -7,7 +7,7 @@ import Search from './Search/Search';
 
 const Home = () => {
   const [activeChat, setActiveChat] = useState(null);
-  const [activeEmojis, setActiveEmojis] = useState(true);
+  const [activeEmojis, setActiveEmojis] = useState(false);
   const chatTextInput = useRef();
 
   const contacts = [
