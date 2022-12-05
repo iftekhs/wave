@@ -8,6 +8,7 @@ import Search from './Search/Search';
 const Home = () => {
   const [activeChat, setActiveChat] = useState(null);
   const [activeEmojis, setActiveEmojis] = useState(false);
+  const [isScrolling, setIsScrolling] = useState(false);
   const chatTextInput = useRef();
 
   const contacts = [
@@ -54,9 +55,9 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="chatbox-right p-5">
-            <div className="flex flex-col h-full px-4 pb-3 bg-white rounded-xl">
-              <div className="h-full mb-10 overflow-auto flex flex-col gap-6 pt-5">
+          <div className="chatbox-right overflow-auto p-5">
+            <div className="flex flex-col h-full pb-3 bg-white rounded-xl">
+              <div className="h-full px-4 mb-5 pb-3 overflow-auto flex flex-col gap-6 pt-5">
                 <div className="py-3 px-5 leading-7 mr-auto bg-cgray rounded-tr-xl rounded-bl-xl rounded-br-xl">
                   Hi How are you?
                 </div>
@@ -81,8 +82,80 @@ const Home = () => {
                 <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
                   You too!
                 </div>
+                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
+                  You too!
+                </div>
+                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
+                  You too!
+                </div>
+                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
+                  You too!
+                </div>
+                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
+                  You too!
+                </div>
+                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
+                  You too!
+                </div>
+                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
+                  You too!
+                </div>
+                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
+                  You too!
+                </div>
+                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
+                  You too!
+                </div>
+                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
+                  You too!
+                </div>
+                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
+                  You too!
+                </div>
+                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
+                  You too!
+                </div>
+                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
+                  You too!
+                </div>
+                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
+                  You too!
+                </div>
+                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
+                  You too!
+                </div>
+                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
+                  You too!
+                </div>
+                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
+                  You too!
+                </div>
+                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
+                  You too!
+                </div>
+                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
+                  You too!
+                </div>
+                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
+                  You too!
+                </div>
+                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
+                  You too!
+                </div>
+                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
+                  You too!
+                </div>
+                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
+                  You too!
+                </div>
+                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
+                  You too!
+                </div>
+                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
+                  You too!
+                </div>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex px-4 items-center gap-4">
                 <div className="w-full flex items-center justify-center gap-2">
                   <div className="relative">
                     <BsEmojiSmile
