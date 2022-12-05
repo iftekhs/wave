@@ -4,6 +4,8 @@ import { BiSend } from 'react-icons/bi';
 import { BsEmojiSmile } from 'react-icons/bs';
 import './Home.css';
 import Search from './Search/Search';
+import FirstPerson from './FirstPerson/FirstPerson';
+import SecondPerson from './SecondPerson/SecondPerson';
 
 const Home = () => {
   const [activeChat, setActiveChat] = useState(null);
@@ -58,102 +60,8 @@ const Home = () => {
           <div className="chatbox-right overflow-auto p-5">
             <div className="flex flex-col h-full pb-3 bg-white rounded-xl">
               <div className="h-full px-4 mb-5 pb-3 overflow-auto flex flex-col gap-6 pt-5">
-                <div className="py-3 px-5 leading-7 mr-auto bg-cgray rounded-tr-xl rounded-bl-xl rounded-br-xl">
-                  Hi How are you?
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  I'm fine what about you?
-                </div>
-                <div className="py-3 px-5 leading-7 mr-auto bg-cgray rounded-tr-xl rounded-bl-xl rounded-br-xl">
-                  Ya i'm fine too! we have a football match today wanna play?
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  Ya ofcourse! when is the match?
-                </div>
-                <div className="py-3 px-5 leading-7 mr-auto bg-cgray rounded-tr-xl rounded-bl-xl rounded-br-xl">
-                  4:00 pm
-                </div>
-                <div className="py-3 px-5 leading-7 mr-auto bg-cgray rounded-tr-xl rounded-bl-xl rounded-br-xl">
-                  Ok, see ya at the match!
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  Alright i will be there
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  You too!
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  You too!
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  You too!
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  You too!
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  You too!
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  You too!
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  You too!
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  You too!
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  You too!
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  You too!
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  You too!
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  You too!
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  You too!
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  You too!
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  You too!
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  You too!
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  You too!
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  You too!
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  You too!
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  You too!
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  You too!
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  You too!
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  You too!
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  You too!
-                </div>
-                <div className="ml-auto py-3 px-5 leading-7 bg-blue-500 text-white rounded-tl-xl rounded-bl-xl rounded-br-xl">
-                  You too!
-                </div>
+                <FirstPerson message="Hi! how are you?"></FirstPerson>
+                <SecondPerson message={"Ya I'm good what about you?"}></SecondPerson>
               </div>
               <div className="flex px-4 items-center gap-4">
                 <div className="w-full flex items-center justify-center gap-2">
