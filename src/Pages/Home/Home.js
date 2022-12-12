@@ -41,7 +41,7 @@ const Home = () => {
 
   return (
     <section>
-      <div className="mh-100 bg-gradient-to-bl from-blue-400 to-blue-500 flex items-center justify-center px-2">
+      <div className="mh-100 flex items-center justify-center px-2">
         <div className="chatbox overflow-auto bg-cgray rounded-lg grid">
           <div className="chatbox-left pt-8 pb-5 pl-10 pr-5">
             <div className="flex flex-col">
