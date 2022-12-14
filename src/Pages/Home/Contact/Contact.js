@@ -9,7 +9,10 @@ const Contact = ({ contact, activeChat, setActiveChat }) => {
       className={`${
         activeChat === _id && 'activeChat'
       } contact text-cgray2 hover:cursor-pointer hover:bg-blue-500 transition-all flex items-center p-5 border-b-blue-400 border-b-0`}>
-      <img className="rounded-full h-14" src={image} alt="" />
+      <div className="relative">
+        <img className="rounded-full h-14" src={image} alt="" />
+        <div className="absolute top-full left-full -translate-y-full -translate-x-full active-contact w-4 h-4 rounded-full bg-emerald-500 border-2 border-white"></div>
+      </div>
       <div className="ml-5">
         <h2 className=" font-semibold">{name}</h2>
         <p className="text-sm text-gray-500">
